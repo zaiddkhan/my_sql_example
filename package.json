@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:backend": "node index.js",
+    "start:backend": "cd backend node index.js",
     "start:frontend": "cd my-react-app && npm start",
     "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
   },
@@ -17,6 +17,7 @@
     "axios": "^1.6.8",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "pg": "^8.11.4"
+    "pg": "^8.11.4",
+    "ws": "^8.16.0"
   }
 }
